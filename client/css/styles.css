@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/*importar fuentes personalizadas*/
+@font-face{
+    font-family:"yanone";
+    src:url("../fonts/yanone.ttf");
+}
+@font-face{
+    font-family:"finger";
+    src: url("../fonts/finger.ttf");
+}
+
+body {      
+    background-color:#cbcceb;    
+    }
+
+    /*CENTRO DE LA PAGINA CUADRO BLANCO*/
+    #global{
+        width: 50%;
+        margin: 0px auto;
+        margin-top: 30px;
+        padding: 25px;
+        /*background-color: rgba(122, 124, 124, 0.5);*/
+        box-shadow: 0px 0px 20px black;
+        border-radius: 10px;
+
+        /* Ubicación de la imagen */    
+        background-image: url(../img/fondo3.jpg);    
+        /* Para dejar la imagen de fondo centrada, vertical y  
+        horizontalmente */    
+        background-position: center left;    
+        /* Para que la imagen de fondo no se repita */    
+        background-repeat: no-repeat;    
+        /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+        background-attachment: fixed;    
+        /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+        background-size: cover;
+    }
+
+    /*CODIGO PARA EL FORMULARIO*/
+    form input[type="text"],      
+    textarea{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding:5px;
+        border-radius:5px;       
+        width: 50%;
+        margin-bottom: 10px;  
+             
+        margin:0px auto;
+        display: block;
+
+        border-color: #ccc;
+        border: 1px solid #812878;    
+        box-shadow: 0px 0px 3px black; 
+        margin-top: 15px;     
+    }
+    
+    form input[type="submit"]{ 
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;    
+        padding: 10px; 
+        cursor: pointer;
+        margin:0px auto;
+        display: block;
+        width: 25%;
+        border-radius:5px;
+        margin-top:15px;
+
+        background: #C884D9;    
+        border: 1px solid #812878;
+        color: white;
+        box-shadow: 0px 0px 3px black; 
+    }
+
+    form input[type="submit"]:hover{  
+        background:rgba(129, 40, 120, 0.8);
+        border: 1px solid black;
+        box-shadow: 0px 0px 5px black;      
+    }
+
+    label{        
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1em;
+        font-family: sans-serif;
+        color:white;              
+    }
+    
+    /*titulo*/
+    h1{
+        font-family:"yanone";
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    /*codigp para los mensajes*/
+    #messages{
+        width: 100%;
+        max-width: 550px;
+        height: 450px;
+        overflow: scroll;
+        border: 3px solid #C884D9;
+        box-shadow: 0px 0px 20px #ccc inset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .message{
+        margin: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid  #812878;
+        background:#F5EEF8;
+    }
+
+    .message strong{        
+        font-weight: bold;
+        font-size: 22px;
+        font-family:"yanone";
+        color: #333;  
+    }
+
+    .message p{
+        font-size:16px;
+        font-family:sans-serif;
+    }
+
+    /*codigo para el mensaje de error*/
+    #oculto{
+        display:none;
+        width: 40%;
+        padding: 5px;        
+        text-align: center;
+        border-radius: 10px;
+
+        background:#C0392B;      
+        border:2px solid #641E16;    
+
+        color: white;
+        font-size:15px;
+        font-family:sans-serif;
+        font-weight: bold;      
+        margin-top: 15px;
+
+        margin-left:auto; 
+        margin-right:auto;
+    }
